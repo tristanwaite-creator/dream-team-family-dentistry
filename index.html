@@ -1806,41 +1806,37 @@
             }
         }
 
-        /* Hero staggered load */
-        .hero-label {
-            opacity: 0;
-            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-            animation-delay: 0.1s;
-        }
+        /* Hero staggered load - only animate if motion is allowed */
+        @media (prefers-reduced-motion: no-preference) {
+            .hero-label {
+                animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+                animation-delay: 0.1s;
+            }
 
-        .hero h1 {
-            opacity: 0;
-            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-            animation-delay: 0.25s;
-        }
+            .hero h1 {
+                animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+                animation-delay: 0.25s;
+            }
 
-        .hero-subtitle {
-            opacity: 0;
-            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-            animation-delay: 0.4s;
-        }
+            .hero-subtitle {
+                animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+                animation-delay: 0.4s;
+            }
 
-        .hero-ctas {
-            opacity: 0;
-            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-            animation-delay: 0.55s;
-        }
+            .hero-ctas {
+                animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+                animation-delay: 0.55s;
+            }
 
-        .hero-visual {
-            opacity: 0;
-            animation: scaleIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-            animation-delay: 0.3s;
-        }
+            .hero-visual {
+                animation: scaleIn 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+                animation-delay: 0.3s;
+            }
 
-        .hero-form-wrapper {
-            opacity: 0;
-            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-            animation-delay: 0.7s;
+            .hero-form-wrapper {
+                animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+                animation-delay: 0.7s;
+            }
         }
 
         /* Enhanced Floating Dots */
