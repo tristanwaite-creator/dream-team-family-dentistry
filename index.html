@@ -2021,6 +2021,16 @@
         }
 
         @media (max-width: 768px) {
+            /* Prevent horizontal overflow on mobile */
+            html, body {
+                overflow-x: hidden;
+                max-width: 100vw;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
             .mobile-menu-btn {
                 display: flex;
             }
@@ -2049,6 +2059,54 @@
 
             .nav .nav-link {
                 font-size: 1.25rem;
+            }
+
+            /* Hero mobile fixes */
+            .hero h1 {
+                font-size: 2rem;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+                max-width: 100%;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+            }
+
+            .hero-badges {
+                justify-content: center;
+            }
+
+            .hero-badge {
+                font-size: 0.75rem;
+                padding: 0.4rem 0.75rem;
+            }
+
+            .hero-ctas {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .hero-ctas .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .hero-ctas .btn-outline {
+                width: auto;
+            }
+
+            .hero-rating {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 0.5rem;
+            }
+
+            .hero-rating-text {
+                font-size: 0.85rem;
             }
 
             .form-grid {
@@ -2092,6 +2150,11 @@
             .cta-buttons {
                 flex-direction: column;
                 align-items: center;
+            }
+
+            /* First Visit grid mobile */
+            .first-visit-grid {
+                grid-template-columns: 1fr;
             }
         }
 
