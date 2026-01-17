@@ -398,66 +398,13 @@
             gap: 0.75rem;
         }
 
-        .header-book-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: var(--gold);
-            color: var(--charcoal);
-            padding: 0.75rem 1.25rem;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 0.85rem;
-            text-decoration: none;
-            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .header-book-btn svg {
-            width: 16px;
-            height: 16px;
-            fill: currentColor;
-        }
-
-        .header-book-btn:hover {
-            background: #c49530;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(212, 165, 55, 0.4);
-        }
-
-        .header-book-btn:active {
-            transform: translateY(0);
-        }
-
-        /* Text Us Button */
+        /* Hide text & book buttons - CTAs available in hero section and sticky footer */
+        .header-book-btn,
         .header-text-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: var(--mint);
-            color: var(--white);
-            padding: 0.75rem 1.25rem;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 0.85rem;
-            text-decoration: none;
-            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            display: none;
         }
 
-        .header-text-btn svg {
-            width: 16px;
-            height: 16px;
-            fill: currentColor;
-        }
-
-        .header-text-btn:hover {
-            background: #6fa389;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(129, 178, 154, 0.4);
-        }
-
-        /* Hide phone on mobile, show book button */
+        /* Mobile header adjustments */
         @media (max-width: 768px) {
             .header-cta-group {
                 gap: 0.5rem;
@@ -467,12 +414,6 @@
                 padding: 0.5rem 0.875rem;
                 font-size: 0.75rem;
                 border-radius: 25px;
-            }
-
-            /* Hide text & book buttons on mobile - they're in sticky footer */
-            .header-text-btn,
-            .header-book-btn {
-                display: none;
             }
         }
 
