@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Claude development files
+.claude/
+
+# Development files
+.DS_Store
+*.log
+
+# Editor files
+.vscode/
+.idea/
+
+# Local environment
+.env
+.env.local
+
+# Old repo content (not needed for deployment)
+repo-content/
+
+# State files (development only)
+state/
+
+# Reference files (development only)
+references/
+
+# Development documentation
+design-system.md
+progress.md
+revision-outline.md
+spec.md
+sitemap.md
+website-review.md

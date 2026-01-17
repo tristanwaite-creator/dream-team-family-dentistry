@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance & Payment Options | Dream Team Family Dentistry</title>
+    <meta name="description" content="We accept TennCare and most major insurance plans. Flexible payment options including CareCredit financing and in-house payment plans.">
+
+    <!-- Fonts - optimized loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    </noscript>
+
+    <style>
+        :root {
+            --teal: #5B8A9B;
+            --teal-light: #7BA3B2;
+            --teal-dark: #4A7485;
+            --teal-pale: #E8F1F4;
+            --white: #FFFFFF;
+            --off-white: #FAFBFC;
+            --gray-100: #F5F7F8;
+            --gray-200: #E8EBED;
+            --gray-400: #9CA3AF;
+            --gray-600: #4B5563;
+            --charcoal: #1F2937;
+            --gold: #D4A537;
+            --gold-light: #F5E6C3;
+
+            --font-display: 'DM Serif Display', Georgia, serif;
+            --font-body: 'DM Sans', -apple-system, sans-serif;
+
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+            --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.1);
+            --shadow-teal: 0 8px 30px rgba(91, 138, 155, 0.25);
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--charcoal);
+            background: var(--white);
+            overflow-x: hidden;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-family: var(--font-display);
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
+        h2 { font-size: clamp(2rem, 4vw, 3rem); color: var(--charcoal); }
+        h3 { font-size: clamp(1.5rem, 3vw, 1.75rem); }
+        h4 { font-size: 1.125rem; }
+
+        /* Skip Link - Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--teal);
+            color: var(--white);
+            padding: 1rem 2rem;
+            border-radius: 0 0 8px 8px;
+            text-decoration: none;
+            font-weight: 600;
+            z-index: 10000;
+            transition: top 0.3s ease;
+        }
+
+        .skip-link:focus {
+            top: 0;
+            outline: 3px solid var(--gold);
+            outline-offset: 2px;
+        }
+
+        /* Enhanced Focus Indicators - Accessibility */
+        :focus-visible {
+            outline: 3px solid var(--teal);
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
+
+        .btn:focus-visible {
+            outline: 3px solid var(--gold);
+            outline-offset: 4px;
+        }
+
+        .nav-link:focus-visible,
+        .logo:focus-visible {
+            outline: 2px solid var(--teal);
+            outline-offset: 4px;
+            border-radius: 8px;
+        }
+
+        input:focus-visible,
+        textarea:focus-visible,
+        select:focus-visible {
+            outline: 2px solid var(--teal);
+            outline-offset: 2px;
+            border-color: var(--teal);
+        }
+
+        p {
+            font-weight: 400;
+            color: var(--gray-600);
+            max-width: 60ch;
+        }
+
+        /* Utility */
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 clamp(1.5rem, 4vw, 3rem);
+        }
+
+        .section {
+            padding: clamp(4rem, 8vw, 7rem) 0;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-decoration: none;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: var(--teal);
+            color: var(--white);
+            box-shadow: var(--shadow-teal);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Shimmer effect on hover */
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.2),
+                transparent
+            );
+            transition: left 0.5s ease;
+        }
+
+        .btn-primary:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary:hover {
+            background: var(--teal-dark);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 12px 35px rgba(91, 138, 155, 0.4);
+        }
+
+        .btn-primary:active {
+            transform: translateY(-1px) scale(0.98);
+        }
+
+        .btn-outline {
+            background: var(--white);
+            color: var(--charcoal);
+            border: 1.5px solid var(--gray-200);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--teal);
+            color: var(--teal);
+        }
+
+        .btn-white {
+            background: var(--white);
+            color: var(--teal);
+        }
+
+        .btn-white:hover {
+            background: var(--off-white);
+        }
+
+        /* ========== HEADER ========== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+            background: rgba(255, 255, 255, 0.95);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .header.scrolled {
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+            padding: 0.75rem 0;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: var(--charcoal);
+        }
+
+        .logo-icon {
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .logo-icon img {
+            width: 44px;
+            height: 44px;
+            object-fit: contain;
+        }
+
+        .logo-text {
+            font-family: var(--font-display);
+            font-size: 1.35rem;
+        }
+
+        .logo-text span {
+            display: block;
+            font-size: 0.7rem;
+            font-family: var(--font-body);
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--teal);
+            margin-top: -2px;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .nav-link {
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--gray-600);
+            text-decoration: none;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--teal);
+        }
+
+        .nav-link svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+        /* Dropdown Menu */
+        .nav-dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            padding: 0.75rem 0;
+            min-width: 200px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            margin-top: 0.5rem;
+        }
+
+        .nav-dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 0.6rem 1.25rem;
+            color: var(--charcoal);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+
+        .dropdown-menu a:hover {
+            background: var(--teal-pale);
+            color: var(--teal);
+        }
+
+
+        .header-cta {
+            background: var(--teal);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .header-cta:hover {
+            background: var(--teal-dark);
+        }
+
+        /* ========== PAGE HERO ========== */
+        .page-hero {
+            padding-top: 160px;
+            padding-bottom: 4rem;
+            background: linear-gradient(180deg, var(--teal-pale) 0%, var(--white) 100%);
+            text-align: center;
+        }
+
+        .page-hero-label {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: rgba(91, 138, 155, 0.15);
+            border: 1px solid rgba(91, 138, 155, 0.2);
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--teal);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1.5rem;
+        }
+
+        .page-hero h1 {
+            color: var(--charcoal);
+            margin-bottom: 1rem;
+        }
+
+        .page-hero h1 .accent {
+            color: var(--teal);
+        }
+
+        .page-hero p {
+            font-size: 1.15rem;
+            color: var(--gray-600);
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        /* ========== SECTION HEADER ========== */
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            margin: 0 auto;
+            max-width: 600px;
+        }
+
+        .section-label {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: var(--teal-pale);
+            border: 1px solid rgba(91, 138, 155, 0.2);
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--teal);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+
+        /* ========== INSURANCE CARDS ========== */
+        .insurance-section {
+            background: var(--white);
+        }
+
+        .insurance-highlight {
+            background: linear-gradient(135deg, var(--teal) 0%, var(--teal-dark) 100%);
+            border-radius: 20px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .insurance-highlight h3 {
+            font-size: 1.75rem;
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .insurance-highlight p {
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .insurance-highlight .tenncare-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            margin-top: 1.5rem;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .insurance-highlight .tenncare-badge svg {
+            width: 28px;
+            height: 28px;
+            fill: var(--white);
+        }
+
+        .insurance-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .insurance-card {
+            background: var(--gray-100);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            border: 2px solid transparent;
+        }
+
+        .insurance-card:hover {
+            background: var(--white);
+            border-color: var(--teal-pale);
+            transform: translateY(-4px);
+            box-shadow: 0 15px 30px rgba(91, 138, 155, 0.12);
+        }
+
+        .insurance-card h4 {
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 1.15rem;
+            color: var(--charcoal);
+            margin-bottom: 1rem;
+        }
+
+        .insurance-card p {
+            font-size: 0.95rem;
+            color: var(--gray-600);
+            max-width: none;
+        }
+
+        .insurance-logos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .insurance-logo {
+            background: var(--white);
+            padding: 0.75rem 1.25rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--gray-600);
+            border: 1px solid var(--gray-200);
+            transition: all 0.3s;
+        }
+
+        .insurance-logo:hover {
+            border-color: var(--teal);
+            color: var(--teal);
+        }
+
+        /* ========== NO INSURANCE SECTION ========== */
+        .no-insurance {
+            background: var(--gray-100);
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .option-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 2.5rem;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            border: 1px solid var(--gray-200);
+            position: relative;
+        }
+
+        .option-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 16px;
+            padding: 2px;
+            background: linear-gradient(135deg, var(--teal), var(--teal-light));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .option-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(91, 138, 155, 0.15);
+            border-color: transparent;
+        }
+
+        .option-card:hover::before {
+            opacity: 1;
+        }
+
+        .option-icon {
+            width: 64px;
+            height: 64px;
+            background: var(--teal-pale);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .option-card:hover .option-icon {
+            transform: scale(1.1) rotate(5deg);
+            background: var(--teal);
+        }
+
+        .option-icon svg {
+            width: 32px;
+            height: 32px;
+            fill: var(--teal);
+            transition: fill 0.3s ease;
+        }
+
+        .option-card:hover .option-icon svg {
+            fill: var(--white);
+        }
+
+        .option-card h3 {
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 1.25rem;
+            color: var(--charcoal);
+            margin-bottom: 1rem;
+        }
+
+        .option-card p {
+            font-size: 0.95rem;
+            color: var(--gray-600);
+            line-height: 1.7;
+            max-width: none;
+        }
+
+        .option-features {
+            list-style: none;
+            margin-top: 1.25rem;
+        }
+
+        .option-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.5rem 0;
+            font-size: 0.9rem;
+            color: var(--gray-600);
+        }
+
+        .option-features li svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--teal);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        /* ========== HOW IT WORKS ========== */
+        .how-it-works {
+            background: var(--white);
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            position: relative;
+        }
+
+        .steps-grid::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 10%;
+            right: 10%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--teal-pale) 0%, var(--teal) 50%, var(--teal-pale) 100%);
+            z-index: 0;
+        }
+
+        .step-card {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: var(--white);
+            border: 3px solid var(--teal);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-family: var(--font-display);
+            font-size: 2rem;
+            color: var(--teal);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .step-card:hover .step-number {
+            background: var(--teal);
+            color: var(--white);
+            transform: scale(1.1);
+        }
+
+        .step-card h3 {
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--charcoal);
+            margin-bottom: 0.75rem;
+        }
+
+        .step-card p {
+            font-size: 0.9rem;
+            color: var(--gray-600);
+            max-width: none;
+        }
+
+        /* ========== CTA SECTION ========== */
+        .cta-section {
+            background: var(--teal);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .wave-top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+            overflow: hidden;
+        }
+
+        .wave-top svg {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 80px;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 5rem 0 4rem;
+        }
+
+        .cta-content h2 {
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .cta-content p {
+            color: rgba(255, 255, 255, 0.85);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-phone {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--white);
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .cta-phone:hover {
+            opacity: 0.9;
+        }
+
+        .cta-phone svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        /* ========== FOOTER ========== */
+        .footer {
+            background: var(--charcoal);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand {
+            color: var(--white);
+        }
+
+        .footer-brand .logo-text {
+            color: var(--white);
+        }
+
+        .footer-brand .logo-text span {
+            color: var(--teal-light);
+        }
+
+        .footer-brand p {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer h4 {
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--white);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.25rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.6rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--teal-light);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.85rem;
+        }
+
+        .footer-legal {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-legal a {
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+        }
+
+        .footer-legal a:hover {
+            color: var(--teal-light);
+        }
+
+        /* ========== ANIMATIONS ========== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .page-hero-label {
+            opacity: 0;
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: 0.1s;
+        }
+
+        .page-hero h1 {
+            opacity: 0;
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: 0.25s;
+        }
+
+        .page-hero p {
+            opacity: 0;
+            animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: 0.4s;
+        }
+
+        /* Scroll-triggered reveals */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Stagger children */
+        .stagger-children > * {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                        transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .stagger-children.revealed > *:nth-child(1) { transition-delay: 0s; }
+        .stagger-children.revealed > *:nth-child(2) { transition-delay: 0.1s; }
+        .stagger-children.revealed > *:nth-child(3) { transition-delay: 0.2s; }
+        .stagger-children.revealed > *:nth-child(4) { transition-delay: 0.3s; }
+        .stagger-children.revealed > *:nth-child(5) { transition-delay: 0.4s; }
+        .stagger-children.revealed > *:nth-child(6) { transition-delay: 0.5s; }
+
+        .stagger-children.revealed > * {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 1024px) {
+            .insurance-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .options-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .steps-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 3rem;
+            }
+
+            .steps-grid::before {
+                display: none;
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        /* Mobile Menu Button */
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+            width: 32px;
+            height: 32px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+            z-index: 1001;
+        }
+
+        .mobile-menu-btn span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: var(--charcoal);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            .nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: white;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1.5rem;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease;
+                z-index: 1000;
+            }
+
+            .nav.active {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .nav .nav-link {
+                font-size: 1.25rem;
+            }
+
+
+            .insurance-grid,
+            .options-grid,
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .insurance-highlight {
+                padding: 2rem;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* Mobile sticky CTA */
+        .mobile-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            padding: 1rem;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+        }
+
+        .mobile-cta-inner {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .mobile-cta .btn {
+            flex: 1;
+            padding: 0.875rem;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-cta {
+                display: block;
+            }
+
+            body {
+                padding-bottom: 80px;
+            }
+        }
+
+        /* Reduced Motion - Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to Content Link - Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <img src="assets/images/logo-icon.png" alt="Dream Team Family Dentistry logo">
+                    </div>
+                    <div class="logo-text">
+                        Dream Team
+                        <span>Family Dentistry</span>
+                    </div>
+                </a>
+
+                                <nav class="nav" id="main-nav">
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <div class="nav-dropdown">
+                        <a href="index.html#services" class="nav-link">Services <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></a>
+                        <div class="dropdown-menu">
+                            <a href="services/implants.html">Dental Implants</a>
+                            <a href="services/oral-surgery.html">Oral Surgery</a>
+                            <a href="services/same-day-crowns.html">Same-Day Crowns</a>
+                            <a href="services/dentures.html">Dentures & Partials</a>
+                            <a href="services/iv-sedation.html">IV Sedation</a>
+                            <a href="services/cleanings.html">Exams & Cleanings</a>
+                            <a href="services/emergency.html">Emergency Care</a>
+                            <a href="services/whitening.html">Teeth Whitening</a>
+                        </div>
+                    </div>
+                    <a href="reviews.html" class="nav-link">Reviews</a>
+                    <a href="insurance.html" class="nav-link">Insurance</a>
+                    <a href="location.html" class="nav-link">Location</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                </nav>
+
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <a href="tel:6159073409" class="header-cta">(615) 907-3409</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="page-hero-label">Insurance & Financing</div>
+            <h1>Insurance & <span class="accent">Payment Options</span></h1>
+            <p>We accept TennCare and most insurance plans. Flexible payment options to make dental care affordable.</p>
+        </div>
+    </section>
+
+    <!-- Accepted Insurance Section -->
+    <section class="insurance-section section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">Accepted Insurance</div>
+                <h2 style="color: var(--charcoal);">We Work With Your Insurance</h2>
+                <p>Our team will help maximize your benefits and minimize out-of-pocket costs.</p>
+            </div>
+
+            <!-- TennCare Highlight -->
+            <div class="insurance-highlight reveal">
+                <h3>TennCare Accepted</h3>
+                <p>We proudly accept TennCare and are committed to serving Tennessee families. Quality dental care should be accessible to everyone in our community.</p>
+                <div class="tenncare-badge">
+                    <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                    TennCare Provider
+                </div>
+            </div>
+
+            <div class="insurance-grid stagger-children reveal">
+                <div class="insurance-card">
+                    <h4>Major Dental Insurance Plans</h4>
+                    <p>We accept most major dental insurance providers to make your care convenient.</p>
+                    <div class="insurance-logos">
+                        <span class="insurance-logo">Delta Dental</span>
+                        <span class="insurance-logo">MetLife</span>
+                        <span class="insurance-logo">Cigna</span>
+                        <span class="insurance-logo">Aetna</span>
+                        <span class="insurance-logo">Guardian</span>
+                        <span class="insurance-logo">United Healthcare</span>
+                        <span class="insurance-logo">Humana</span>
+                        <span class="insurance-logo">Principal</span>
+                        <span class="insurance-logo">Ameritas</span>
+                    </div>
+                </div>
+
+                <div class="insurance-card">
+                    <h4>PPO Plans</h4>
+                    <p>Most PPO plans allow you to visit any dentist, giving you the freedom to choose Dream Team for your dental care. We'll work with your plan to maximize your benefits.</p>
+                </div>
+
+                <div class="insurance-card">
+                    <h4>Don't See Your Plan?</h4>
+                    <p>Don't worry! We work with many insurance providers. Call us to verify your coverage and we'll help you understand your benefits before your visit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Options Without Insurance -->
+    <section class="no-insurance section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">Affordable Care</div>
+                <h2 style="color: var(--charcoal);">Options for Patients Without Insurance</h2>
+                <p>No insurance? No problem. We offer flexible payment solutions to fit your budget.</p>
+            </div>
+
+            <div class="options-grid stagger-children reveal">
+                <div class="option-card">
+                    <div class="option-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+                    </div>
+                    <h3>Payment Plans</h3>
+                    <p>We understand that dental care is an investment. That's why we offer flexible payment schedules to help you get the treatment you need.</p>
+                    <ul class="option-features">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Flexible payment schedules
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Spread costs over time
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            No credit check required
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="option-card">
+                    <div class="option-icon">
+                        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
+                    </div>
+                    <h3>CareCredit Healthcare Financing</h3>
+                    <p>CareCredit is a healthcare credit card that helps you pay for treatments not covered by insurance.</p>
+                    <ul class="option-features">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            0% interest promotional periods
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Quick online application
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            6-24 month payment plans
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="option-card">
+                    <div class="option-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    </div>
+                    <h3>In-House Discount Programs</h3>
+                    <p>We offer special discount programs for patients without insurance to make dental care more affordable.</p>
+                    <ul class="option-features">
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Discounted preventive care
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Reduced rates on treatments
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                            Family discount options
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How Billing Works -->
+    <section class="how-it-works section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">Simple Process</div>
+                <h2 style="color: var(--charcoal);">How Billing Works</h2>
+                <p>We make the billing process transparent and stress-free from start to finish.</p>
+            </div>
+
+            <div class="steps-grid stagger-children reveal">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Pre-Appointment Insurance Verification</h3>
+                    <p>Before your visit, we verify your benefits including deductible, co-pay, and coverage details so there are no surprises.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Treatment Plan & Cost Estimate</h3>
+                    <p>We provide clear cost estimates before any treatment begins, so you know exactly what to expect financially.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Insurance Filing</h3>
+                    <p>We file all insurance claims on your behalf, handling the paperwork so you don't have to worry about it.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Payment & Options</h3>
+                    <p>We accept cash, checks, all major credit cards, and offer payment plans to fit your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="wave-top">
+            <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+                <path fill="#FFFFFF" d="M0,80 C480,30 960,30 1440,80 L1440,0 L0,0 Z"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2>Questions About Coverage?</h2>
+                <p>Our friendly team is here to help you understand your insurance benefits and payment options. Give us a call or schedule an appointment today.</p>
+
+                <div class="cta-buttons">
+                    <a href="tel:6159073409" class="btn btn-white">Call Us Now</a>
+                    <a href="index.html#contact" class="btn btn-outline" style="border-color: rgba(255,255,255,0.4);">Schedule Appointment</a>
+                </div>
+
+                <a href="tel:6159073409" class="cta-phone">
+                    <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+                    (615) 907-3409
+                </a>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem; display: inline-flex;">
+                        <div class="logo-icon">
+                            <img src="assets/images/logo-icon.png" alt="Dream Team Family Dentistry logo">
+                        </div>
+                        <div class="logo-text">
+                            Dream Team
+                            <span>Family Dentistry</span>
+                        </div>
+                    </a>
+                    <p>Murfreesboro's trusted family dentist. TennCare accepted. Serving our community with compassionate, comprehensive dental care.</p>
+                </div>
+
+                <div>
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services/implants.html">Dental Implants</a></li>
+                        <li><a href="services/same-day-crowns.html">Same-Day Crowns</a></li>
+                        <li><a href="services/oral-surgery.html">Oral Surgery</a></li>
+                        <li><a href="services/dentures.html">Dentures</a></li>
+                        <li><a href="services/whitening.html">Teeth Whitening</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="insurance.html">Insurance</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="location.html">Location</a></li>
+                        <li><a href="new-patients.html">New Patients</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li>1535 W Northfield Blvd</li>
+                        <li>Suite 10</li>
+                        <li>Murfreesboro, TN 37129</li>
+                        <li style="margin-top: 0.5rem;"><a href="tel:6159073409">(615) 907-3409</a></li>
+                    </ul>
+                    <div style="margin-top: 1rem; font-size: 0.85rem;">
+                        <strong style="color: var(--white);">Hours:</strong><br>
+                        Mon-Fri: 8am - 5pm<br>
+                        Select Saturdays: 10am - 5pm
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dream Team Family Dentistry. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms</a>
+                    <a href="accessibility.html">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="mobile-cta">
+        <div class="mobile-cta-inner container">
+            <a href="tel:6159073409" class="btn btn-outline">Call Now</a>
+            <a href="index.html#contact" class="btn btn-primary">Schedule</a>
+        </div>
+    </div>
+
+    <script>
+        // Header scroll effect with throttle
+        const header = document.getElementById('header');
+        let ticking = false;
+
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    if (window.scrollY > 50) {
+                        header.classList.add('scrolled');
+                    } else {
+                        header.classList.remove('scrolled');
+                    }
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll-triggered reveal animations
+        const revealElements = document.querySelectorAll('.reveal, .reveal-scale, .stagger-children');
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, {
+            root: null,
+            rootMargin: '0px 0px -80px 0px',
+            threshold: 0.1
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // Button ripple effect
+        document.querySelectorAll('.btn-primary').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                const rect = this.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                const ripple = document.createElement('span');
+                ripple.style.cssText = `
+                    position: absolute;
+                    background: rgba(255, 255, 255, 0.4);
+                    border-radius: 50%;
+                    pointer-events: none;
+                    width: 0;
+                    height: 0;
+                    left: ${x}px;
+                    top: ${y}px;
+                    transform: translate(-50%, -50%);
+                    animation: ripple 0.6s ease-out forwards;
+                `;
+                this.appendChild(ripple);
+
+                setTimeout(() => ripple.remove(), 600);
+            });
+        });
+
+        // Add ripple keyframes dynamically
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                to {
+                    width: 300px;
+                    height: 300px;
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mainNav = document.getElementById('main-nav');
+
+        if (mobileMenuBtn && mainNav) {
+            mobileMenuBtn.addEventListener('click', function() {
+                this.classList.toggle('active');
+                mainNav.classList.toggle('active');
+                document.body.style.overflow = mainNav.classList.contains('active') ? 'hidden' : '';
+            });
+
+            // Close menu when clicking a link
+            mainNav.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenuBtn.classList.remove('active');
+                    mainNav.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Dream Team Family Dentistry | Murfreesboro, TN</title>
+    <meta name="description" content="Privacy Policy for Dream Team Family Dentistry in Murfreesboro, TN. Learn how we collect, use, and protect your personal information.">
+
+    <!-- Fonts - optimized loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    </noscript>
+
+    <style>
+        :root {
+            --teal: #5B8A9B;
+            --teal-light: #7BA3B2;
+            --teal-dark: #4A7485;
+            --teal-pale: #E8F1F4;
+            --white: #FFFFFF;
+            --off-white: #FAFBFC;
+            --gray-100: #F5F7F8;
+            --gray-200: #E8EBED;
+            --gray-400: #9CA3AF;
+            --gray-600: #4B5563;
+            --charcoal: #1F2937;
+            --gold: #D4A537;
+            --gold-light: #F5E6C3;
+
+            --font-display: 'DM Serif Display', Georgia, serif;
+            --font-body: 'DM Sans', -apple-system, sans-serif;
+
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+            --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.1);
+            --shadow-teal: 0 8px 30px rgba(91, 138, 155, 0.25);
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--charcoal);
+            background: var(--white);
+            overflow-x: hidden;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-family: var(--font-display);
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
+        h2 { font-size: clamp(2rem, 4vw, 3rem); color: var(--charcoal); }
+        h3 { font-size: clamp(1.5rem, 3vw, 1.75rem); }
+        h4 { font-size: 1.125rem; }
+
+        /* Skip Link - Accessibility */
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--teal);
+            color: var(--white);
+            padding: 1rem 2rem;
+            border-radius: 0 0 8px 8px;
+            text-decoration: none;
+            font-weight: 600;
+            z-index: 10000;
+            transition: top 0.3s ease;
+        }
+
+        .skip-link:focus {
+            top: 0;
+            outline: 3px solid var(--gold);
+            outline-offset: 2px;
+        }
+
+        /* Enhanced Focus Indicators - Accessibility */
+        :focus-visible {
+            outline: 3px solid var(--teal);
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
+
+        .btn:focus-visible {
+            outline: 3px solid var(--gold);
+            outline-offset: 4px;
+        }
+
+        .nav-link:focus-visible,
+        .logo:focus-visible {
+            outline: 2px solid var(--teal);
+            outline-offset: 4px;
+            border-radius: 8px;
+        }
+
+        p {
+            font-weight: 400;
+            color: var(--gray-600);
+            max-width: 60ch;
+        }
+
+        /* Utility */
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 clamp(1.5rem, 4vw, 3rem);
+        }
+
+        .section {
+            padding: clamp(4rem, 8vw, 7rem) 0;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-decoration: none;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: var(--teal);
+            color: var(--white);
+            box-shadow: var(--shadow-teal);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary:hover {
+            background: var(--teal-dark);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 12px 35px rgba(91, 138, 155, 0.4);
+        }
+
+        .btn-outline {
+            background: var(--white);
+            color: var(--charcoal);
+            border: 1.5px solid var(--gray-200);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--teal);
+            color: var(--teal);
+        }
+
+        /* ========== HEADER ========== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+            background: rgba(255, 255, 255, 0.95);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .header.scrolled {
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+            padding: 0.75rem 0;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: var(--charcoal);
+        }
+
+        .logo-icon {
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .logo-icon img {
+            width: 44px;
+            height: 44px;
+            object-fit: contain;
+        }
+
+        .logo-text {
+            font-family: var(--font-display);
+            font-size: 1.35rem;
+        }
+
+        .logo-text span {
+            display: block;
+            font-size: 0.7rem;
+            font-family: var(--font-body);
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--teal);
+            margin-top: -2px;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .nav-link {
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--gray-600);
+            text-decoration: none;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .nav-link:hover {
+            color: var(--teal);
+        }
+
+        .nav-link svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
+        /* Dropdown Menu */
+        .nav-dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            padding: 0.75rem 0;
+            min-width: 200px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            margin-top: 0.5rem;
+        }
+
+        .nav-dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 0.6rem 1.25rem;
+            color: var(--charcoal);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+
+        .dropdown-menu a:hover {
+            background: var(--teal-pale);
+            color: var(--teal);
+        }
+
+        .header-cta {
+            background: var(--teal);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .header-cta:hover {
+            background: var(--teal-dark);
+        }
+
+        /* ========== PAGE HERO ========== */
+        .page-hero {
+            padding-top: 160px;
+            padding-bottom: 3rem;
+            background: linear-gradient(180deg, var(--teal-pale) 0%, var(--white) 100%);
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            color: var(--charcoal);
+            margin-bottom: 1rem;
+        }
+
+        .page-hero p {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        /* ========== LEGAL CONTENT ========== */
+        .legal-content {
+            background: var(--white);
+        }
+
+        .legal-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .legal-notice {
+            background: var(--gold-light);
+            border-left: 4px solid var(--gold);
+            padding: 1.5rem;
+            border-radius: 0 12px 12px 0;
+            margin-bottom: 3rem;
+        }
+
+        .legal-notice p {
+            color: var(--charcoal);
+            font-weight: 500;
+            max-width: none;
+            margin: 0;
+        }
+
+        .legal-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .legal-section h2 {
+            font-size: 1.5rem;
+            color: var(--charcoal);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--teal-pale);
+        }
+
+        .legal-section h3 {
+            font-size: 1.15rem;
+            font-family: var(--font-body);
+            font-weight: 600;
+            color: var(--charcoal);
+            margin: 1.5rem 0 0.75rem;
+        }
+
+        .legal-section p {
+            margin-bottom: 1rem;
+            max-width: none;
+        }
+
+        .legal-section ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+            color: var(--gray-600);
+        }
+
+        .legal-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .legal-section strong {
+            color: var(--charcoal);
+        }
+
+        .last-updated {
+            color: var(--gray-400);
+            font-size: 0.9rem;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--gray-200);
+        }
+
+        .contact-box {
+            background: var(--gray-100);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-box h3 {
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--charcoal);
+            margin-bottom: 1rem;
+        }
+
+        .contact-box p {
+            margin-bottom: 0.5rem;
+            max-width: none;
+        }
+
+        /* ========== FOOTER ========== */
+        .footer {
+            background: var(--charcoal);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand {
+            color: var(--white);
+        }
+
+        .footer-brand .logo-text {
+            color: var(--white);
+        }
+
+        .footer-brand .logo-text span {
+            color: var(--teal-light);
+        }
+
+        .footer-brand p {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .footer h4 {
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--white);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.25rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.6rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--teal-light);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.85rem;
+        }
+
+        .footer-legal {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-legal a {
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+        }
+
+        .footer-legal a:hover {
+            color: var(--teal-light);
+        }
+
+        /* Mobile Menu Button */
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+            width: 32px;
+            height: 32px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+            z-index: 1001;
+        }
+
+        .mobile-menu-btn span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: var(--charcoal);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 1024px) {
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            .nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: white;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1.5rem;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease;
+                z-index: 1000;
+            }
+
+            .nav.active {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .nav .nav-link {
+                font-size: 1.25rem;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+        }
+
+        /* Mobile sticky CTA */
+        .mobile-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            padding: 1rem;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+            z-index: 999;
+        }
+
+        .mobile-cta-inner {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .mobile-cta .btn {
+            flex: 1;
+            padding: 0.875rem;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-cta {
+                display: block;
+            }
+
+            body {
+                padding-bottom: 80px;
+            }
+        }
+
+        /* Reduced Motion - Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to Content Link - Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <img src="assets/images/logo-icon.png" alt="Dream Team Family Dentistry logo">
+                    </div>
+                    <div class="logo-text">
+                        Dream Team
+                        <span>Family Dentistry</span>
+                    </div>
+                </a>
+
+                <nav class="nav" id="main-nav">
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <div class="nav-dropdown">
+                        <a href="index.html#services" class="nav-link">Services <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg></a>
+                        <div class="dropdown-menu">
+                            <a href="services/implants.html">Dental Implants</a>
+                            <a href="services/oral-surgery.html">Oral Surgery</a>
+                            <a href="services/same-day-crowns.html">Same-Day Crowns</a>
+                            <a href="services/dentures.html">Dentures & Partials</a>
+                            <a href="services/iv-sedation.html">IV Sedation</a>
+                            <a href="services/cleanings.html">Exams & Cleanings</a>
+                            <a href="services/emergency.html">Emergency Care</a>
+                            <a href="services/whitening.html">Teeth Whitening</a>
+                        </div>
+                    </div>
+                    <a href="reviews.html" class="nav-link">Reviews</a>
+                    <a href="insurance.html" class="nav-link">Insurance</a>
+                    <a href="location.html" class="nav-link">Location</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                </nav>
+
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <a href="tel:6159073409" class="header-cta">(615) 907-3409</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>Privacy Policy</h1>
+                <p>Your privacy is important to us. This policy explains how we collect, use, and protect your personal information.</p>
+            </div>
+        </section>
+
+        <!-- Legal Content -->
+        <section class="legal-content section">
+            <div class="container">
+                <div class="legal-container">
+
+                    <div class="legal-notice">
+                        <p><strong>Important:</strong> This privacy policy is a template and should be reviewed and customized by qualified legal counsel to ensure compliance with all applicable federal, state, and local laws, including HIPAA regulations.</p>
+                    </div>
+
+                    <div class="legal-section">
+                        <h2>Introduction</h2>
+                        <p>Dream Team Family Dentistry ("we," "us," or "our") is committed to protecting your privacy. This Privacy Policy describes how we collect, use, disclose, and safeguard your information when you visit our dental practice or use our website.</p>
+                    </div>
+
+                    <div class="legal-section">
+                        <h2>Information We Collect</h2>
+
+                        <h3>Personal Information</h3>
+                        <p>We may collect personally identifiable information that you voluntarily provide to us, including:</p>
+                        <ul>
+                            <li>Name, address, phone number, and email address</li>
+                            <li>Date of birth and Social Security number (for insurance purposes)</li>
+                            <li>Insurance information and billing details</li>
+                            <li>Emergency contact information</li>
+                        </ul>
+
+                        <h3>Health Information</h3>
+                        <p>As a healthcare provider, we collect protected health information (PHI) as defined by HIPAA, including:</p>
+                        <ul>
+                            <li>Medical and dental history</li>
+                            <li>Treatment records and clinical notes</li>
+                            <li>X-rays, photographs, and diagnostic images</li>
+                            <li>Prescription and medication information</li>
+                        </ul>
+
+                        <h3>Website Information</h3>
+                        <p>When you visit our website, we may automatically collect certain information, including:</p>
+                        <ul>
+                            <li>Browser type and operating system</li>
+                            <li>Pages visited and time spent on our website</li>
+                            <li>Referring website addresses</li>
+                            <li>IP address and general location information</li>
+                        </ul>
+                    </div>
+
+                    <div class="legal-section">
+                        <h2>How We Use Your Information</h2>
+                        <p>We use the information we collect for the following purposes:</p>
+                        <ul>
+                            <li>To provide dental care and treatment services</li>
+                            <li>To schedule and manage appointments</li>
+                            <li>To process insurance claims and billing</li>
+                            <li>To communicate with you about your care</li>
+                            <li>To send appointment reminders and follow-up information</li>
+                            <li>To comply with legal and regulatory requirements</li>
+                            <li>To improve our services and patient experience</li>
+                        </ul>
+                    </div>
+
+                    <div class="legal-section">
+                        <h2>HIPAA Compliance</h2>
+                        <p>As a healthcare provider, we comply with the Health Insurance Portability and Accountability Act (HIPAA). We maintain appropriate administrative, technical, and physical safeguards to protect your protected health information (PHI).</p>
+                        <p>You have certain rights regarding your health information, including the right to:</p>
+                        <ul>
+                            <li>Access and obtain a copy of your health records</li>
+                            <li>Request amendments to your health records</li>
+                            <li>Receive an accounting of disclosures</li>
+                            <li>Request restrictions on certain uses and disclosures</li>
+                            <li>Request confidential communications</li>
+                        </ul>
+                        <p>A complete Notice of Privacy Practices is available at our office upon request.</p>
+                    </div>
+
+                    <div class="legal-section">
+                        <h2>Information Sharing</h2>
+                        <p>We do not sell, trade, or rent your personal information to third parties. We may share your information in the following circumstances:</p>
+                        <ul>
+                            <li>With your consent or at your direction</li>
+                            <li>For treatment, payment, and healthcare operations</li>
+                            <li>With insurance companies to process claims</li>
+                            <li>With referring dentists and specialists involved in your care</li>
+                            <li>As required by law or legal process</li>
+                            <li>To protect our rights or the safety of others</li>
+                        </ul>
+                    </div>
+
+                    <div class="legal-section">
+                        <h2>Data Security</h2>
+                        <p>We implement appropriate security measures to protect your personal and health information from unauthorized access, alteration, disclosure, or destruction. These measures include:</p>
+                        <ul>
+                            <li>Encrypted electronic records systems</li>
+                            <li>Secure physical storage for paper records</li>
+                            <li>Staff training on privacy and security practices</li>
+                            <li>Access controls limiting who can view your information</li>
+                        </ul>
+                    </div>
+
+                    <div class="legal-section">
+                        <h2>Children's Privacy</h2>
+                        <p>We provide dental services to patients of all ages, including children. When treating minors, we collect information from parents or legal guardians. Parents and guardians have the right to access their child's health information and make decisions about its use and disclosure.</p>
+                    </div>
+
+                    <div class="legal-section">
+                        <h2>Changes to This Policy</h2>
+                        <p>We may update this Privacy Policy from time to time to reflect changes in our practices or applicable laws. We will notify you of any material changes by posting the updated policy on our website and updating the "Last Updated" date below.</p>
+                    </div>
+
+                    <div class="contact-box">
+                        <h3>Contact Us</h3>
+                        <p>If you have questions about this Privacy Policy or our privacy practices, please contact us:</p>
+                        <p><strong>Dream Team Family Dentistry</strong></p>
+                        <p>1535 W Northfield Blvd, Suite 10</p>
+                        <p>Murfreesboro, TN 37129</p>
+                        <p>Phone: <a href="tel:6159073409">(615) 907-3409</a></p>
+                    </div>
+
+                    <p class="last-updated">Last Updated: January 2025</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" style="margin-bottom: 1rem; display: inline-flex;">
+                        <div class="logo-icon">
+                            <img src="assets/images/logo-icon.png" alt="Dream Team Family Dentistry logo">
+                        </div>
+                        <div class="logo-text">
+                            Dream Team
+                            <span>Family Dentistry</span>
+                        </div>
+                    </a>
+                    <p>Murfreesboro's trusted family dentist. TennCare accepted. Serving our community with compassionate, comprehensive dental care.</p>
+                </div>
+
+                <div>
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services/implants.html">Dental Implants</a></li>
+                        <li><a href="services/same-day-crowns.html">Same-Day Crowns</a></li>
+                        <li><a href="services/oral-surgery.html">Oral Surgery</a></li>
+                        <li><a href="services/dentures.html">Dentures</a></li>
+                        <li><a href="services/whitening.html">Teeth Whitening</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="insurance.html">Insurance</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="location.html">Location</a></li>
+                        <li><a href="new-patients.html">New Patients</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li>1535 W Northfield Blvd</li>
+                        <li>Suite 10</li>
+                        <li>Murfreesboro, TN 37129</li>
+                        <li style="margin-top: 0.5rem;"><a href="tel:6159073409">(615) 907-3409</a></li>
+                    </ul>
+                    <div style="margin-top: 1rem; font-size: 0.85rem;">
+                        <strong style="color: var(--white);">Hours:</strong><br>
+                        Mon-Fri: 8am - 5pm<br>
+                        Select Saturdays: 10am - 5pm
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dream Team Family Dentistry. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms</a>
+                    <a href="accessibility.html">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA -->
+    <div class="mobile-cta">
+        <div class="mobile-cta-inner container">
+            <a href="tel:6159073409" class="btn btn-outline">Call Now</a>
+            <a href="new-patients.html" class="btn btn-primary">Schedule</a>
+        </div>
+    </div>
+
+    <script>
+        // Header scroll effect
+        const header = document.getElementById('header');
+        let ticking = false;
+
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    if (window.scrollY > 50) {
+                        header.classList.add('scrolled');
+                    } else {
+                        header.classList.remove('scrolled');
+                    }
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mainNav = document.getElementById('main-nav');
+
+        if (mobileMenuBtn && mainNav) {
+            mobileMenuBtn.addEventListener('click', function() {
+                this.classList.toggle('active');
+                mainNav.classList.toggle('active');
+                document.body.style.overflow = mainNav.classList.contains('active') ? 'hidden' : '';
+            });
+
+            mainNav.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenuBtn.classList.remove('active');
+                    mainNav.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+        }
+    </script>
+</body>
+</html>
