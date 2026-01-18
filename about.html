@@ -383,66 +383,15 @@
             gap: 0.75rem;
         }
 
-        .header-book-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: var(--gold);
-            color: var(--charcoal);
-            padding: 0.75rem 1.25rem;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 0.85rem;
-            text-decoration: none;
-            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        .header-book-btn svg {
-            width: 16px;
-            height: 16px;
-            fill: currentColor;
-        }
-
-        .header-book-btn:hover {
-            background: #c49530;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(212, 165, 55, 0.4);
-        }
-
-        /* Text Us Button */
+        /* Hide text & book buttons - CTAs available in hero section and sticky footer */
+        .header-book-btn,
         .header-text-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: var(--mint);
-            color: var(--white);
-            padding: 0.75rem 1.25rem;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 0.85rem;
-            text-decoration: none;
-            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        .header-text-btn svg {
-            width: 16px;
-            height: 16px;
-            fill: currentColor;
-        }
-
-        .header-text-btn:hover {
-            background: #6fa389;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(129, 178, 154, 0.4);
+            display: none;
         }
 
         @media (max-width: 768px) {
             .header-cta-group { gap: 0.5rem; }
             .header-cta { padding: 0.6rem 1rem; font-size: 0.8rem; }
-            .header-book-btn { padding: 0.6rem 1rem; font-size: 0.75rem; }
-            .header-book-btn span { display: none; }
-            .header-text-btn { padding: 0.6rem 1rem; font-size: 0.75rem; }
-            .header-text-btn span { display: none; }
         }
 
         /* ========== PAGE HERO ========== */
